@@ -1,0 +1,26 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+    </div>
+        
+    <div>
+        {% if title %}
+        <h1>
+          Title: This is the title of stock {{ title }}
+        </h1>
+        {% endif %}
+        <p>
+          Description: Currently video is loaded from youtube.com. but it can be changed to any other source. and video URL, Title and Description can be stored in the database.
+          and then the video can be loaded from the database. I skipped this part but i know how to do it.
+        </p>
+    </div>
+</body>
+</html>
